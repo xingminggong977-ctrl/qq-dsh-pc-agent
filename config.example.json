@@ -1,0 +1,32 @@
+﻿{
+  "$说明": "复制到 %USERPROFILE%\\.dsh-qq-pc\\config.json 再改。token 也可以放在环境变量 PC_TOKEN 里（环境变量优先）。",
+  "token": "把云端 bridge 的 NODE_TOKEN 填在这里",
+  "agentId": "pc-lenovo",
+  "baseUrl": "",
+  "roots": [
+    "C:\\Users\\lenovo\\Documents",
+    "C:\\Users\\lenovo\\Desktop",
+    "C:\\Users\\lenovo\\Downloads"
+  ],
+  "defaultCwd": "C:\\Users\\lenovo\\Documents",
+  "powershellPath": "",
+  "heartbeatMs": 10000,
+  "pollWaitSeconds": 25,
+  "inflightMax": 4,
+  "logLevel": "info",
+  "tunnel": {
+    "enabled": true,
+    "sshPath": "ssh",
+    "host": "root@203.0.113.11",
+    "keyPath": "%USERPROFILE%\\.ssh\\qq_bridge_ed25519",
+    "localPort": 18787,
+    "remoteHost": "127.0.0.1",
+    "remotePort": 8787,
+    "serverAliveInterval": 15,
+    "serverAliveCountMax": 3,
+    "minDelayMs": 1000,
+    "maxDelayMs": 60000,
+    "factor": 2,
+    "stableAfterMs": 30000
+  }
+}

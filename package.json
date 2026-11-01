@@ -1,0 +1,16 @@
+{
+  "name": "pc-agent",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "QQ 机器人 PC 工具通道的本机代理：反向 SSH 隧道 + 长轮询云端 bridge + 本地白名单执行",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "self-check": "node src/index.js --print-policy",
+    "test": "node --test \"test/**/*.test.js\""
+  }
+}
