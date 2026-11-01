@@ -1,3 +1,19 @@
+# qq-dsh-pc-agent
+
+**Lets a remote agent reach your desktop — a very small part of it.**
+
+A tiny HTTP service that runs on your own machine and answers three verbs: run a command,
+read a file, write a file. The agent on the server talks to it through an authenticated
+relay, so nothing has to be exposed to the public internet.
+
+## In short
+
+- **You need:** Node 22+ on the desktop, and a token shared with the bridge.
+- **Try it:** `node --test "test/**/*.test.js"` — 166 tests, no network needed.
+- **Safety:** every path is resolved and checked against an allow-list; `exec` has a timeout
+  and a size cap; the service refuses to start without a token.
+
+---
 # pc-agent
 
 QQ 机器人「PC 工具通道」的本机代理。**云端永远不连进来**：它自己用 SSH 反向端口转发把云端的
