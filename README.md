@@ -109,7 +109,7 @@ powershell -ExecutionPolicy Bypass -File install-task.ps1 -Status
 ```powershell
 node src/index.js --help          # 用法
 node src/index.js --print-policy  # 当前生效的 roots / execAllow / baseUrl
-node --test "test/**/*.test.js"   # 158 个用例（含本地假桥烟测，不连真服务器）
+node --test "test/**/*.test.js"   # 166 个用例（含本地假桥烟测，不连真服务器）
 ```
 
 测试覆盖的正是最容易出事的地方：`..` 逃逸、符号链接（junction）逃逸、硬拒目录、白名单外命令、
